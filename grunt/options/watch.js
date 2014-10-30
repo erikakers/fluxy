@@ -4,26 +4,11 @@ module.exports = {
 		files: ['Gruntfile.js']
 	},
 	javascript: {
-		files: ['<%= config.src %>/javascript/{,*/}*.js'],
-		tasks: ['newer:concat:dev', 'autopolyfiller', 'newer:jshint', 'react']
+		files: ['<%= config.src %>/javascript/**/**/*.js'],
+		tasks: ['concat:dev']
 	},
 	react: {
-		files: ['<%= config.src %>/javascript/jsx/{,*/}*.jsx'],
+		files: ['<%= config.src %>/jsx/**/**/*.jsx'],
 		tasks: ['newer:react']
-	},
-	mocha: {
-		files: ['test/{,*/}*.js'],
-		tasks: ['mocha']
-	},
-	livereload: {
-		options: {
-			livereload: '<%= connect.options.livereload %>'
-		},
-		files: [
-			'<%= config.app %>/**/*.html',
-			'<%= config.app %>/styles/{,*/}*.css',
-			'{.tmp,<%= config.app %>}/scripts/{,*/}*.js',
-			'<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}'
-		]
 	}
 };

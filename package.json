@@ -1,7 +1,7 @@
 {
   "name": "fluxy",
   "version": "0.0.0",
-  "description": "Experiements with Flux and React. ",
+  "description": "Experiements with Flux and React.",
   "repository": {
     "type": "git",
     "url": "https://github.com/erikakers/fluxy.git"
@@ -20,10 +20,10 @@
   "devDependencies": {
     "glob": "^4.0.6",
     "grunt": "^0.4.5",
-    "grunt-browserify": "^3.1.0",
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^0.8.0",
     "grunt-react": "^0.10.0",
     "jit-grunt": "^0.9.0",
     "time-grunt": "^1.0.0"

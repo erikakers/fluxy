@@ -1,6 +1,9 @@
 module.exports = {
-  js: {
-    src: '<%= config.src %>/javascript/**/*.js',
-    dest: '<%= config.src %>/scripts/app.js'
+  dist: {
+    files: {
+      '<%= config.app %>/scripts/app.js' : [
+        '<%= config.src %>/javascript/**/**/*.js'
+      ]
+    }
   }
 }

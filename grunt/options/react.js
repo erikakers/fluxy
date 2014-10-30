@@ -3,9 +3,9 @@ module.exports = {
 		files: [
 			{
 				expand: true,
-				cwd: '<%= config.src %>/javascript/jsx',
+				cwd: '<%= config.src %>/jsx',
 				src: ['**/*.jsx'],
-				dest: '<%= config.src %>/javascript/views',
+				dest: '<%= config.src %>/javascript/components',
 				ext: '.js'
 			}
 		]
