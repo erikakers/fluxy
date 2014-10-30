@@ -2,26 +2,14 @@ module.exports = {
 	options: {
 		banner: '<%= banner %>'
 	},
-	loader: {
-		src: [
-			'<%= config.src %>/javascript/loader/**/*.js'
-		],
-		dest: '<%= config.src %>/scripts/loader.js'
-	},
 	vendor: {
 		src: [
 			'<%= config.vendor %>/jquery/dist/jquery.js',
 			'<%= config.vendor %>/lodash/dist/lodash.js',
-			'<%= config.vendor %>/flux/dist/Flux.js',
+			'<%= config.vendor %>/reflux/dist/reflux.js',
 			'<%= config.vendor %>/react/react.js'
 		],
 		dest: '<%= config.app %>/scripts/vendor/plugins.js'
-	},
-	mobile: {
-		src: [
-			'<%= config.vendor %>/fastclick/lib/fastclick.js'
-		],
-		dest: '<%= config.app %>/mobile/vendor/mobile.js'
 	},
 	dev: {
 		src: [
