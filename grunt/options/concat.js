@@ -13,14 +13,16 @@ module.exports = {
 	},
 	dev: {
 		src: [
-			'<%= config.src %>/javascript/config/**/**/*.js',
-			'<%= config.src %>/javascript/utilities/**/**/*.js',
+			'<%= config.src %>/javascript/config/App.Namespace.js',
+			'<%= config.src %>/javascript/config/App.Features.js',
+			'<%= config.src %>/javascript/utils/**/**/*.js',
 			'<%= config.src %>/javascript/constants/**/**/*.js',
-			'<%= config.src %>/javascript/dispatchers/**/**/*.js',
+			'<%= config.src %>/javascript/actions/**/**/*.js',
 			'<%= config.src %>/javascript/stores/**/**/*.js',
 			'<%= config.src %>/javascript/components/**/**/*.js',
 			'<%= config.src %>/javascript/helpers/**/**/*.js',
-			'<%= config.src %>/javascript/features/**/**/*.js'
+			'<%= config.src %>/javascript/features/**/**/*.js',
+			'<%= config.src %>/javascript/config/App.Init.js',
 		],
 		dest: '<%= config.app %>/scripts/app.js'
 	}
