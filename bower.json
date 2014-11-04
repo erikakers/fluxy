@@ -23,6 +23,8 @@
     "jquery": "~2.1.1",
     "lodash": "~2.4.1",
     "reflux": "~0.1.13",
-    "react": "~0.12.0"
+    "react": "~0.12.0",
+    "jquery-tiny-pubsub": "~0.7.0",
+    "velocity": "~1.1.0"
   }
 }

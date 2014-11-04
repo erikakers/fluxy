@@ -9,6 +9,6 @@ module.exports = {
 	},
 	react: {
 		files: ['<%= config.src %>/jsx/**/**/*.jsx'],
-		tasks: ['newer:react']
+		tasks: ['react']
 	}
 };
